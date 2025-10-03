@@ -345,10 +345,17 @@
           font-size: 14px;
         }
 
-        .info-pengantin {
-          flex-direction: row; /* tetap kiri-kanan */
-          gap: 20px;
-        }
+        .foto-pengantin img {
+    max-width: 80%;   /* biar fotonya lebih kecil */
+    margin: 0 auto;
+    display: block;
+  }
+
+  .info-pengantin {
+    font-size: 14px; /* teks lebih kecil biar muat */
+    text-align: center;
+    padding: 0 10px;
+  }
 
         .info-fia {
           text-align: right;
@@ -383,12 +390,17 @@
         }
 
         .nama-pengantin {
-          top: auto; /* hapus positioning absolute untuk mobile */
-          left: 10%;
-          margin-top: 50px; /* jarak dari kotak gallery */
-          font-size: 2rem;
-          position: relative; /* supaya mengikuti aliran konten */
-        }
+    top: 55%;       /* biar tetap proporsional */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px; /* kecilin font kalau kepanjangan */
+  }
+
+  .gallery-grid {
+    width: 90%;
+    max-width: 280px;
+    height: auto; /* biar ga ketarik */
+  }
 
         .pengantin {
           flex-direction: row; /* tetap sejajar kiri-kanan */
