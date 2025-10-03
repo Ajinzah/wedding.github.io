@@ -1486,27 +1486,27 @@
           <!-- Foto Pengantin -->
           <div class="pengantin">
             <div class="foto-pengantin">
+              <img src="img/IMG_4164 3.jpeg" alt="FENDI" />
+            </div>
+            <div class="foto-pengantin">
               <img
                 src="img/WhatsApp Image 2025-10-01 at 14.34.13.jpeg"
                 alt="FIA"
               /><br />
             </div>
-            <div class="foto-pengantin">
-              <img src="img/IMG_4164 3.jpeg" alt="FENDI" />
-            </div>
           </div>
 
           <!-- Nama & info pengantin -->
           <div class="info-pengantin">
-            <div class="info-fia">
-              <h2 id="fia-nama"></h2>
-              <p id="fia-ortu"></p>
-              <p id="fia-alamat"></p>
-            </div>
             <div class="info-fendi">
               <h2 id="fendi-nama"></h2>
               <p id="fendi-ortu"></p>
               <p id="fendi-alamat"></p>
+            </div>
+            <div class="info-fia">
+              <h2 id="fia-nama"></h2>
+              <p id="fia-ortu"></p>
+              <p id="fia-alamat"></p>
             </div>
           </div>
         </div>
@@ -1543,8 +1543,8 @@
             </div>
             <div class="akad-info">
               <h3>Akad Nikah</h3>
-              <p><strong>Pukul:</strong> 10.00 WIB - selesai</p>
-              <p><strong>Lokasi:</strong> Taman Joglo Krasak, Jepara</p>
+              <p><strong>Pukul:</strong> 11.00 WIB - selesai</p>
+              <p><strong>Lokasi:</strong> Resto Taman Joglo Krasak, Jepara</p>
             </div>
           </div>
           <a
@@ -1721,7 +1721,7 @@
       <div id="audio-container">
         <audio id="song" autoplay loop>
           <source
-            src="wwd.mp3juice.blog - ANUGERAH TERINDAH - ANDMESH LIRIK LAGU (Lyrics) (320 KBps).mp3"
+            src="wwd.mp3juice.blog - ANUGERAH TERINDAH - ANDMESH LIRIK LAGU (Lyrics) (320 KBps) (1).mp3"
             type="audio/mp3"
           />
         </audio>
@@ -1835,6 +1835,23 @@
               if (entry.isIntersecting && !typed) {
                 typed = true;
                 // panggil efek mengetik untuk masing-masing pengantin
+                typeText("fendi-nama", "Widyan Fendi Pradana");
+                setTimeout(
+                  () =>
+                    typeText(
+                      "fendi-ortu",
+                      "Putra dari Bapak Muhammad Zidin & Ibu Almh Sulistiyowati"
+                    ),
+                  1500
+                );
+                setTimeout(
+                  () =>
+                    typeText(
+                      "fendi-alamat",
+                      "Kalipucang Kulon Welahan Jepara"
+                    ),
+                  3000
+                );
                 typeText("fia-nama", "Fia Ismawati");
                 setTimeout(
                   () =>
@@ -1849,24 +1866,6 @@
                     typeText(
                       "fia-alamat",
                       "Rejosari Mijen Demak"
-                    ),
-                  3000
-                );
-
-                typeText("fendi-nama", "Widyan Fendi Pradana");
-                setTimeout(
-                  () =>
-                    typeText(
-                      "fendi-ortu",
-                      "Putra dari Bapak Muhammad Zidin & Ibu Almh Sulistiyowati"
-                    ),
-                  1500
-                );
-                setTimeout(
-                  () =>
-                    typeText(
-                      "fendi-alamat",
-                      "Pendosawalan Jepara"
                     ),
                   3000
                 );
