@@ -34,25 +34,24 @@
       }
 
       .tamu-container {
-  margin-top: 20px;
-  text-align: center;
-  line-height: 1.6;
-}
+        margin-top: 20px;
+        text-align: center;
+        line-height: 1.6;
+      }
 
-.tamu-container .yth {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0;
-  color: #2c3e50;
-}
+      .tamu-container .yth {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 0;
+        color: #2c3e50;
+      }
 
-#namaTamu {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin: 5px 0 0;
-  color: #34495e;
-}
-
+      #namaTamu {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 5px 0 0;
+        color: #34495e;
+      }
 
       .slide,
       .foto-slide-full {
@@ -303,11 +302,17 @@
 
       @media (max-width: 768px) {
         .gallery-grid {
-          width: 200px; /* lebih kecil */
-          height: 270px; /* proporsional */
-          top: 30px; /* jarak atas dikurangi */
-          left: 20px; /* jarak kiri dikurangi */
+          top: 30px;
+          left: 25px;
+          width: 90%;
+          max-width: 280px;
+          height: auto; /* biar ga ketarik */
         }
+
+        .tanggal-pernikahan h2,
+  .nama-pengantin h2 {
+    font-size: 20px; /* lebih kecil biar muat */
+  }
 
         .gallery-slider img {
           width: auto; /* biar proporsional */
@@ -346,16 +351,16 @@
         }
 
         .foto-pengantin img {
-    max-width: 80%;   /* biar fotonya lebih kecil */
-    margin: 0 auto;
-    display: block;
-  }
+          max-width: 60%; /* biar fotonya lebih kecil */
+          margin: 0 auto;
+          display: block;
+        }
 
-  .info-pengantin {
-    font-size: 14px; /* teks lebih kecil biar muat */
-    text-align: center;
-    padding: 0 10px;
-  }
+        .info-pengantin {
+          font-size: 14px; /* teks lebih kecil biar muat */
+          text-align: center;
+          padding: 0 10px;
+        }
 
         .info-fia {
           text-align: right;
@@ -371,10 +376,11 @@
       /* Mobile kecil (≤480px) */
       @media (max-width: 480px) {
         .gallery-grid {
-          width: 70vw; /* setengah layar */
-          height: 470px; /* proporsional */
           top: 30px;
           left: 25px;
+          width: 90%;
+          max-width: 280px;
+          height: auto; /* biar ga ketarik */
         }
 
         .gallery-slider img {
@@ -390,17 +396,23 @@
         }
 
         .nama-pengantin {
-    top: 55%;       /* biar tetap proporsional */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px; /* kecilin font kalau kepanjangan */
-  }
+          top: 55%; /* biar tetap proporsional */
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 18px; /* kecilin font kalau kepanjangan */
+        }
 
-  .gallery-grid {
-    width: 90%;
-    max-width: 280px;
-    height: auto; /* biar ga ketarik */
-  }
+        .foto-pengantin img {
+          max-width: 60%; /* biar fotonya lebih kecil */
+          margin: 0 auto;
+          display: block;
+        }
+
+        .info-pengantin {
+          font-size: 14px; /* teks lebih kecil biar muat */
+          text-align: center;
+          padding: 0 10px;
+        }
 
         .pengantin {
           flex-direction: row; /* tetap sejajar kiri-kanan */
@@ -1844,7 +1856,10 @@
                 typeText("fendi-nama", "Widyan Fendi Pradana");
                 setTimeout(
                   () =>
-                    typeText("fendi-ortu", "Putra dari Bapak Muhammad Zidin & Ibu Almh Sulistiyowati"),
+                    typeText(
+                      "fendi-ortu",
+                      "Putra dari Bapak Muhammad Zidin & Ibu Almh Sulistiyowati"
+                    ),
                   1500
                 );
                 setTimeout(
